@@ -1,0 +1,70 @@
+{
+  "name": "dash-flexbox-grid",
+  "version": "0.0.1",
+  "description": "Wrapper around react-flexbox-grid",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pikhovkin/dash-flexbox-grid.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pikhovkin/dash-flexbox-grid/issues"
+  },
+  "homepage": "https://github.com/pikhovkin/dash-flexbox-grid",
+  "scripts": {
+    "extract-metadata": "mkdirp lib && react-docgen --pretty -e index.js -o lib/metadata.json src/components && node -e \"const fs = require('fs'); const path = require('path'); const m = JSON.parse(fs.readFileSync('./lib/metadata.json')); const r = {}; Object.keys(m).forEach(k => r[k.split(path.sep).join('/')] = m[k]); fs.writeFileSync('./lib/metadata.json', JSON.stringify(r, '\t', 2));\"",
+    "build-dist": "builder run clean-lib && builder run extract-metadata && webpack --config=config/webpack.config.dev.js",
+    "build-dist-production": "builder run clean-lib && builder run extract-metadata && webpack -p --config=config/webpack.config.dist.js",
+    "copy-lib": "copyfiles -u 1 lib/* dash_flexbox_grid && copyfiles -u 2 node_modules/flexboxgrid2/flexboxgrid2.css dash_flexbox_grid",
+    "install-local": "npm run copy-lib && venv/bin/python setup.py install",
+    "prepublish": "npm test && builder run build-dist-production && npm run copy-lib",
+    "publish-all": "npm publish && python setup.py sdist upload",
+    "publish-pypi": "npm run prepublish && python setup.py sdist upload",
+    "start": "builder run build-dev",
+    "test": "jest --verbose",
+    "test-watch": "builder run test-frontend-watch",
+    "test-debug": "builder run test-frontend-debug",
+    "uninstall-local": "pip uninstall sd-data-table -y"
+  },
+  "dependencies": {
+    "builder": "3.2.2",
+    "copyfiles": "^1.2.0",
+    "d3-format": "^1.2.0",
+    "dash-components-archetype": "^0.2.11",
+    "flow-bin": "^0.72.0",
+    "lodash": "^4.17.10",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-flexbox-grid": "^2.1.0",
+    "string-format": "^0.5.0"
+  },
+  "devDependencies": {
+    "babel-jest": "^23.0.1",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "dash-components-archetype-dev": "^0.2.11",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "identity-obj-proxy": "^3.0.0",
+    "ify-loader": "^1.1.0",
+    "jest": "^22.4.4",
+    "react-test-renderer": "^16.3.2",
+    "style-loader": "^0.21.0",
+    "webpack": "^2.7.0"
+  },
+  "jest": {
+    "setupFiles": [
+      "raf/polyfill",
+      "<rootDir>test/_test-env.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ],
+    "moduleNameMapper": {
+      "\\.(s?css|less)$": "identity-obj-proxy"
+    }
+  }
+}

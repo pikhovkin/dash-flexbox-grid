@@ -1,0 +1,6 @@
+include dash_flexbox_grid/bundle.js
+include dash_flexbox_grid/bundle.js.map
+include dash_flexbox_grid/metadata.json
+include dash_flexbox_grid/flexboxgrid2.css
+include README.md
+include LICENSE.md
