@@ -1,28 +1,17 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {Row as FXRow, ViewportSizeType} from 'react-flexbox-grid';
+import {Row as FXRow} from 'react-flexbox-grid';
 
 
 export default class Row extends Component {
     render() {
-        return (
-            <FXRow
-                reverse={this.props.reverse}
-                start={this.props.start}
-                center={this.props.center}
-                end={this.props.end}
-                top={this.props.top}
-                middle={this.props.middle}
-                bottom={this.props.bottom}
-                around={this.props.around}
-                between={this.props.between}
-                className={this.props.className}
-                tagName={this.props.tagName}
-                children={this.props.children}
-            />
-        );
+        return <FXRow {...this.props}/>
     }
 }
+
+
+const ViewportSizeType = FXRow.propTypes.start;
+
 
 Row.propTypes = {
     reverse: PropTypes.bool,

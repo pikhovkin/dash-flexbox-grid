@@ -5,12 +5,7 @@ import {Grid as FXGrid} from 'react-flexbox-grid';
 
 export default class Grid extends React.Component {
     render() {
-        return <FXGrid
-                fluid={this.props.fluid}
-                className={this.props.className}
-                tagName={this.props.tagName}
-                children={this.props.children}
-            />
+        return <FXGrid {...this.props}/>
     }
 }
 

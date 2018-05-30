@@ -20,13 +20,7 @@ _js_dist = [
         'namespace': 'dash_flexbox_grid'
     }
 ]
-_css_dist = [
-    {
-        'relative_package_path': 'flexboxgrid2.css',
-        'external_url': 'https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.css',
-        'namespace': 'dash_flexbox_grid'
-    }
-]
+_css_dist = []
 
 
 for _component in _components:

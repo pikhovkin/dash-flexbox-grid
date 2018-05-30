@@ -16,7 +16,7 @@
     "extract-metadata": "mkdirp lib && react-docgen --pretty -e index.js -o lib/metadata.json src/components && node -e \"const fs = require('fs'); const path = require('path'); const m = JSON.parse(fs.readFileSync('./lib/metadata.json')); const r = {}; Object.keys(m).forEach(k => r[k.split(path.sep).join('/')] = m[k]); fs.writeFileSync('./lib/metadata.json', JSON.stringify(r, '\t', 2));\"",
     "build-dist": "builder run clean-lib && builder run extract-metadata && webpack --config=config/webpack.config.dev.js",
     "build-dist-production": "builder run clean-lib && builder run extract-metadata && webpack -p --config=config/webpack.config.dist.js",
-    "copy-lib": "copyfiles -u 1 lib/* dash_flexbox_grid && copyfiles -u 2 node_modules/flexboxgrid2/flexboxgrid2.css dash_flexbox_grid",
+    "copy-lib": "copyfiles -u 1 lib/* dash_flexbox_grid",
     "install-local": "npm run copy-lib && venv/bin/python setup.py install",
     "prepublish": "npm test && builder run build-dist-production && npm run copy-lib",
     "publish-all": "npm publish && python setup.py sdist upload",
@@ -30,7 +30,6 @@
   "dependencies": {
     "builder": "3.2.2",
     "copyfiles": "^1.2.0",
-    "d3-format": "^1.2.0",
     "dash-components-archetype": "^0.2.11",
     "flow-bin": "^0.72.0",
     "lodash": "^4.17.10",
