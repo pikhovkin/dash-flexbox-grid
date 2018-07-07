@@ -10,6 +10,8 @@ export default class Grid extends React.Component {
 }
 
 Grid.propTypes = {
+    id: PropTypes.string,
+
     fluid: PropTypes.bool,
     className: PropTypes.string,
     tagName: PropTypes.string,

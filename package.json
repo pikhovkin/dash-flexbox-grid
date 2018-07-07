@@ -1,6 +1,6 @@
 {
   "name": "dash-flexbox-grid",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Wrapper around react-flexbox-grid",
   "main": "lib/index.js",
   "repository": {
@@ -25,7 +25,7 @@
     "test": "jest --verbose",
     "test-watch": "builder run test-frontend-watch",
     "test-debug": "builder run test-frontend-debug",
-    "uninstall-local": "pip uninstall sd-data-table -y"
+    "uninstall-local": "pip uninstall dash-flexbox-grid -y"
   },
   "dependencies": {
     "builder": "3.2.2",

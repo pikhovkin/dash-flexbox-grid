@@ -4,6 +4,13 @@
     "displayName": "Col",
     "methods": [],
     "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
       "xs": {
         "type": {
           "name": "custom",
@@ -123,6 +130,13 @@
     "displayName": "Grid",
     "methods": [],
     "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
       "fluid": {
         "type": {
           "name": "bool"
@@ -158,6 +172,13 @@
     "displayName": "Row",
     "methods": [],
     "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
       "reverse": {
         "type": {
           "name": "bool"

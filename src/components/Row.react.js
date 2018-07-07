@@ -14,6 +14,8 @@ const ViewportSizeType = FXRow.propTypes.start;
 
 
 Row.propTypes = {
+    id: PropTypes.string,
+  
     reverse: PropTypes.bool,
     start: ViewportSizeType,
     center: ViewportSizeType,

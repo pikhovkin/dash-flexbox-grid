@@ -15,6 +15,8 @@ const ViewportSizeType = FXCol.propTypes.first;
 
 
 Col.propTypes = {
+    id: PropTypes.string,
+
     xs: ColumnSizeType,
     sm: ColumnSizeType,
     md: ColumnSizeType,
