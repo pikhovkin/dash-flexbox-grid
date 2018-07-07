@@ -12,6 +12,11 @@
     "url": "https://github.com/pikhovkin/dash-flexbox-grid/issues"
   },
   "homepage": "https://github.com/pikhovkin/dash-flexbox-grid",
+  "keywords": [
+    "dash",
+    "plotly",
+    "plotly-dash"
+  ],
   "scripts": {
     "extract-metadata": "mkdirp lib && react-docgen --pretty -e index.js -o lib/metadata.json src/components && node -e \"const fs = require('fs'); const path = require('path'); const m = JSON.parse(fs.readFileSync('./lib/metadata.json')); const r = {}; Object.keys(m).forEach(k => r[k.split(path.sep).join('/')] = m[k]); fs.writeFileSync('./lib/metadata.json', JSON.stringify(r, '\t', 2));\"",
     "build-dist": "builder run clean-lib && builder run extract-metadata && webpack --config=config/webpack.config.dev.js",
