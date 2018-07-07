@@ -52,6 +52,7 @@
     "dash-components-archetype-dev": "^0.2.11",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "growl": "^1.10.5",
     "identity-obj-proxy": "^3.0.0",
     "ify-loader": "^1.1.0",
     "jest": "^22.4.4",
