@@ -1,6 +1,6 @@
 # dash-flexbox-grid
 
-Wrapper around [react-flexbox-grid][]
+Wrapper around [react-flexbox-grid][] for Plotly [Dash][]
 
 ## Usage
 
