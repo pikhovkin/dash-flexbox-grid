@@ -9,7 +9,7 @@ dash-html-components
 dash-renderer
 ipdb
 percy
-selenium
+selenium==3.14.1
 flake8
 pylint
 pytest-dash
