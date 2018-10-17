@@ -11,5 +11,5 @@ ipdb
 percy
 selenium
 flake8
-pylint
+pylint==2.1.1
 pytest-dash
