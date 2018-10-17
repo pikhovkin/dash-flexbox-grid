@@ -7,7 +7,7 @@ dash
 dash-core-components
 dash-html-components
 dash-renderer
-ipdb
+ipdb==0.11
 percy
 selenium
 flake8
