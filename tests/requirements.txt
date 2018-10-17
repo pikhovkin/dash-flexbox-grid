@@ -6,7 +6,7 @@ chromedriver-binary
 dash
 dash-core-components
 dash-html-components
-dash-renderer
+dash-renderer==0.14.3
 ipdb
 percy
 selenium
