@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {Row as FXRow} from 'react-flexbox-grid';
+import {Row as FXRow, ViewportSizeType} from 'react-flexbox-grid';
 
 
 export default class Row extends Component {
@@ -9,13 +9,9 @@ export default class Row extends Component {
     }
 }
 
-
-const ViewportSizeType = FXRow.propTypes.start;
-
-
 Row.propTypes = {
     id: PropTypes.string,
-  
+
     reverse: PropTypes.bool,
     start: ViewportSizeType,
     center: ViewportSizeType,

@@ -1,5 +1,5 @@
 {
-  "src/components/Col.react.js": {
+  "src/lib/components/Col.react.js": {
     "description": "",
     "displayName": "Col",
     "methods": [],
@@ -125,7 +125,7 @@
       }
     }
   },
-  "src/components/Grid.react.js": {
+  "src/lib/components/Grid.react.js": {
     "description": "",
     "displayName": "Grid",
     "methods": [],
@@ -167,7 +167,7 @@
       }
     }
   },
-  "src/components/Row.react.js": {
+  "src/lib/components/Row.react.js": {
     "description": "",
     "displayName": "Row",
     "methods": [],

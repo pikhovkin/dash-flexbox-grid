@@ -26,9 +26,7 @@
         "build:js-dev": "webpack --mode development",
         "build:js": "webpack --mode production",
         "build:py": "node ./extract-meta.js src/lib/components > dash_flexbox_grid/metadata.json && copyfiles package.json dash_flexbox_grid && venv/bin/python -c \"import dash; dash.development.component_loader.generate_classes('dash_flexbox_grid', 'dash_flexbox_grid/metadata.json')\"",
-        "build:all": "npm run build:js & npm run build:js-dev & npm run build:py",
-        "publish-all": "npm publish && python setup.py sdist upload",
-        "publish-pypi": "npm run prepublish && python setup.py sdist upload"
+        "build:all": "npm run build:js & npm run build:js-dev & npm run build:py"
     },
     "dependencies": {
         "ramda": "^0.25.0",

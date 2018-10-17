@@ -1,14 +1,20 @@
+import json
+import os
 from setuptools import setup
 
-exec (open('dash_flexbox_grid/version.py').read())
+
+with open(os.path.join('dash_flexbox_grid', 'package.json')) as f:
+    package = json.load(f)
+
+package_name = package["name"].replace(" ", "_").replace("-", "_")
 
 setup(
-    name='dash_flexbox_grid',
-    version=__version__,
-    author='pikhovkin',
-    packages=['dash_flexbox_grid'],
+    name=package_name,
+    version=package["version"],
+    author=package['author'],
+    packages=[package_name],
     include_package_data=True,
-    license='MIT',
-    description='Wrapper around react-flexbox-grid',
+    license=package['license'],
+    description=package['description'] if 'description' in package else package_name,
     install_requires=[]
 )

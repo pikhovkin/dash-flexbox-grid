@@ -36,8 +36,8 @@ Wrapper around [react-flexbox-grid][] for Plotly [Dash][]
 
 Go to this link to learn about [Dash][].
 
-See the [dash-components-archetype][] repo for more information.
+See the [dash-component-boilerplate][] repo for more information.
 
 [react-flexbox-grid]: https://github.com/roylee0704/react-flexbox-grid
 [Dash]: https://github.com/plotly/dash
-[dash-components-archetype]: https://github.com/plotly/dash-components-archetype
+[dash-component-boilerplate]: https://github.com/plotly/dash-component-boilerplate

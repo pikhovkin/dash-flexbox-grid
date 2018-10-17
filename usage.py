@@ -1,10 +1,14 @@
-import dash_flexbox_grid as dfx
 import dash
+from dash.dependencies import Input, Output
 import dash_html_components as html
 
-app = dash.Dash('')
+import dash_flexbox_grid as dfx
+
+
+app = dash.Dash(__name__)
 
 app.scripts.config.serve_locally = True
+app.css.config.serve_locally = True
 
 app.layout = dfx.Grid(id='grid', fluid=True, children=[
     dfx.Row(children=[
