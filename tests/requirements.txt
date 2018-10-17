@@ -8,7 +8,7 @@ dash-core-components
 dash-html-components
 dash-renderer
 ipdb
-percy
+percy==2.0.0
 selenium
 flake8
 pylint
