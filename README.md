@@ -1,8 +1,18 @@
 # dash-flexbox-grid
 
+
+[![PyPI](https://img.shields.io/pypi/v/dash-flexbox-grid.svg)](https://pypi.org/project/dash-flexbox-grid/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/dash_flexbox_grid.svg)
+[![NPM](https://img.shields.io/npm/v/dash-flexbox-grid.svg)](https://www.npmjs.com/package/dash-flexbox-grid)
+[![PyPI - License](https://img.shields.io/pypi/l/dash-flexbox-grid.svg)](./LICENSE)
+
 Wrapper around [react-flexbox-grid][] for Plotly [Dash][]
 
-## Usage
+### Installation
+
+    pip install dash_flexbox_grid
+
+### Usage
 
 ```python
 
@@ -32,7 +42,7 @@ Wrapper around [react-flexbox-grid][] for Plotly [Dash][]
 
 ```
 
-## Dash
+### Dash
 
 Go to this link to learn about [Dash][].
 
