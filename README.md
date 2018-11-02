@@ -1,6 +1,5 @@
 # dash-flexbox-grid
 
-
 [![PyPI](https://img.shields.io/pypi/v/dash-flexbox-grid.svg)](https://pypi.org/project/dash-flexbox-grid/)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/dash_flexbox_grid.svg)
 [![NPM](https://img.shields.io/npm/v/dash-flexbox-grid.svg)](https://www.npmjs.com/package/dash-flexbox-grid)
