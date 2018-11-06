@@ -1,3 +1,3 @@
 # dash is required to call `build:py`
-dash
+dash==0.29.0
 dash-html-components
