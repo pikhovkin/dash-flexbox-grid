@@ -7,8 +7,6 @@ dash
 dash-core-components
 dash-html-components
 dash-renderer
-ipdb
-percy
 selenium
 flake8
 pylint
