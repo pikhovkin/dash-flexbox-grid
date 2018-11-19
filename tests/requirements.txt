@@ -3,10 +3,10 @@
 # pip install -r requirements.txt
 
 chromedriver-binary
-dash
+dash==0.30.0
 dash-core-components==0.38.0
 dash-html-components
-dash-renderer
+dash-renderer==0.15.1
 selenium
 flake8
 pylint
