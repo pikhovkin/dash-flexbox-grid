@@ -9,5 +9,5 @@ dash-html-components
 dash-renderer==0.15.1
 selenium==3.141.0
 flake8==3.6.0
-pylint
+pylint==2.1.1
 pytest-dash
