@@ -5,7 +5,7 @@
 chromedriver-binary==2.43.0
 dash==0.30.0
 dash-core-components==0.38.0
-dash-html-components
+dash-html-components==0.13.2
 dash-renderer==0.15.1
 selenium==3.141.0
 flake8==3.6.0
