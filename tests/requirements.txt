@@ -10,4 +10,4 @@ dash-renderer==0.18.0
 selenium==3.141.0
 flake8==3.7.5
 pylint==2.2.2
-pytest-dash==1.1.0
+pytest-dash==2.0.0
