@@ -8,6 +8,6 @@ dash-core-components==0.43.1
 dash-html-components==0.13.4
 dash-renderer==0.19.0
 selenium==3.141.0
-flake8==3.7.6
+flake8==3.7.7
 pylint==2.2.2
 pytest-dash==2.1.1
