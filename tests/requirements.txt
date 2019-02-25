@@ -6,8 +6,8 @@ chromedriver-binary==2.46.0
 dash==0.38.0
 dash-core-components==0.43.1
 dash-html-components==0.13.4
-dash-renderer==0.18.0
+dash-renderer==0.19.0
 selenium==3.141.0
 flake8==3.7.7
 pylint==2.2.2
-pytest-dash==2.0.0
+pytest-dash==2.1.1
