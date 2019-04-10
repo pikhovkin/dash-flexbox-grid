@@ -3,7 +3,7 @@
 # pip install -r requirements.txt
 
 chromedriver-binary==74.0.3729.6.0
-dash==0.39.0
+dash==0.41.0
 dash-core-components==0.45.0
 dash-html-components==0.15.0
 dash-renderer==0.21.0
