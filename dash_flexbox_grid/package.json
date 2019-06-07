@@ -1,6 +1,6 @@
 {
     "name": "dash-flexbox-grid",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Wrapper around react-flexbox-grid for Plotly Dash",
     "main": "build/index.js",
     "repository": {
@@ -26,7 +26,9 @@
         "build:js-dev": "webpack --mode development",
         "build:js": "webpack --mode production",
         "build:py": "node ./extract-meta.js src/lib/components > dash_flexbox_grid/metadata.json && copyfiles package.json dash_flexbox_grid && venv/bin/python -c \"import dash; dash.development.component_loader.generate_classes('dash_flexbox_grid', 'dash_flexbox_grid/metadata.json')\"",
-        "build:all": "npm run build:js & npm run build:js-dev & npm run build:py"
+        "build:all": "npm run build:js & npm run build:js-dev & npm run build:py",
+        "publish-all": "npm publish && python setup.py sdist upload",
+        "publish-pypi": "npm run prepublish && python setup.py sdist upload"
     },
     "dependencies": {
         "ramda": "^0.25.0",
@@ -38,20 +40,21 @@
         "babel-core": "^6.26.3",
         "babel-eslint": "^8.2.3",
         "babel-loader": "^7.1.4",
-        "copyfiles": "^2.0.0",
         "babel-preset-env": "^1.7.0",
         "babel-preset-react": "^6.24.1",
-        "css-loader": "^0.28.11",
+        "copyfiles": "^2.0.0",
+        "css-loader": "^2.1.1",
         "eslint": "^4.19.1",
         "eslint-config-prettier": "^2.9.0",
         "eslint-plugin-import": "^2.12.0",
         "eslint-plugin-react": "^7.9.1",
-        "npm": "^6.1.0",
+        "merge": "^1.2.1",
+        "npm": "^6.9.0",
         "react-docgen": "^2.20.1",
         "style-loader": "^0.21.0",
         "webpack": "^4.20.2",
         "webpack-cli": "^3.1.1",
-        "webpack-serve": "^1.0.2"
+        "webpack-serve": "^3.1.0"
     },
     "peerDependencies": {
         "react": ">=0.14",

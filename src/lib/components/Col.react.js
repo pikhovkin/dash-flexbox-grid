@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {Col as FXCol, ColumnSizeType, ViewportSizeType} from 'react-flexbox-grid';
+import {Col as FXCol} from 'react-flexbox-grid';
+
+import {ColumnSizeType, ViewportSizeType} from './types';
 
 
 export default class Col extends Component {
