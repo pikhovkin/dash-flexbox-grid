@@ -4,7 +4,7 @@
 
 chromedriver-binary==75.0.3770.8.0
 dash==1.0.0
-dash-core-components==1.0.0
+dash-core-components==1.9.0
 dash-html-components==1.0.0
 dash-renderer==1.0.0
 selenium==3.141.0
