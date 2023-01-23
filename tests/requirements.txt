@@ -7,7 +7,7 @@ dash==1.0.0
 dash-core-components==1.0.0
 dash-html-components==1.0.0
 dash-renderer==1.0.0
-selenium==3.141.0
+selenium==4.8.0
 flake8==3.7.7
 pylint==2.3.1
 pytest-dash==2.1.2
