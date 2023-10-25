@@ -2,7 +2,7 @@
 # Switch into a virtual environment
 # pip install -r requirements.txt
 
-chromedriver-binary==75.0.3770.8.0
+chromedriver-binary==120.0.6087.0.0
 dash==1.0.0
 dash-core-components==1.0.0
 dash-html-components==1.0.0
